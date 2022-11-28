@@ -1,9 +1,9 @@
 const func = require('.');
 
 test("1. Используя метод map() напишите код, который получает из массива строк новый массив, содержащий их длины.", () => {
-  expect(func?.getArrayLengthStrings('который получает из массива строк новый массив')).toEqual([7,8,2,7,5,5,6]);
-  expect(func?.getArrayLengthStrings('')).toEqual([]);
-  expect(func?.getArrayLengthStrings('привет   мир')).toEqual([6, 3]);
+  expect(func?.getArrayLengthStrings(['который','получает','из','массива','строк','новый','массив'])).toEqual([7,8,2,7,5,5,6]);
+  expect(func?.getArrayLengthStrings([])).toEqual([]);
+  expect(func?.getArrayLengthStrings(['привет', 'мир'])).toEqual([6, 3]);
 });
 
 test("2. Имеется массив простых чисел: numbers = [2, 3, 5, 7, 11, 13, 17, 19]. Использую метод reduce() напишите функцию currentSums(numbers), которая возвращает новый массив из такого же числа элементов, в котором на каждой позиции будет находиться сумма элементов массива numbers до этой позиции включительно.", () => {
